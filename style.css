@@ -9,7 +9,10 @@ body {
     color: purple;
     text-align: center;
     border: 2px solid purple;
+    width: 80%;
+    height: 50%;
     padding: 15px;
+    margin: 20px auto;
 }
 
 .header {
@@ -100,4 +103,14 @@ img {
     text-align: center;
     font-size: 18px;
     margin: 30px;
+}
+
+
+/* pseudo-class selector that changes nav link color when hovered*/
+.navbar a:hover {
+    color: yellow;
+}
+
+.about-navbar a:hover {
+    color: yellow;
 }
