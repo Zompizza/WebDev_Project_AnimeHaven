@@ -9,10 +9,11 @@ body {
     color: purple;
     text-align: center;
     border: 2px solid purple;
-    width: 80%;
-    height: 50%;
+    width: 40%;
+    height: 50px;
     padding: 15px;
     margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.85);
 }
 
 .header {
@@ -46,6 +47,7 @@ body {
 .main-table {
     width: 100%;
     border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.85);
 }
 
 .main-table td {
@@ -64,6 +66,18 @@ img {
     margin: 5px;
 }
 
+.home-page {
+    background-image: url("../backgroundindex.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.popular {
+    border-left: 2px solid purple;
+    padding: 15px;
+    background-color: rgba(230, 220, 255, 0.9);
+}
 
 /* ABOUT PAGE */
 
@@ -75,11 +89,6 @@ img {
 
 .about-table td {
     padding: 20px;
-}
-
-.popular {
-    border-left: 2px solid purple;
-    padding: 15px;
 }
 
 .about-title {
@@ -106,11 +115,10 @@ img {
 }
 
 
-/* pseudo-class selector that changes nav link color when hovered*/
-.navbar a:hover {
-    color: yellow;
-}
-
-.about-navbar a:hover {
-    color: yellow;
+/* background for about page */
+.about-page {
+    background-image: url("../backgroundabout.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
