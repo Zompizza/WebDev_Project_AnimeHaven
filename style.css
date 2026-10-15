@@ -67,7 +67,7 @@ img {
 }
 
 .home-page {
-    background-image: url("../backgroundindex.jpg");
+    background-image: url("backgroundindex.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -117,7 +117,7 @@ img {
 
 /* background for about page */
 .about-page {
-    background-image: url("../backgroundabout.jpg");
+    background-image: url("backgroundabout.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
