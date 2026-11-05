@@ -36,7 +36,7 @@ body {
 }
 
 .navbar {
-    background-color: purple;
+    background-color: #4B0082;
     padding: 10px;
     text-align: center;
 }
@@ -70,7 +70,7 @@ img {
 }
 
 .home-page {
-    background-image: url("backgroundindex.jpg");
+    background-image: url("../backgroundindex.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -100,13 +100,13 @@ img {
     border: 2px solid darkblue;
     width: 80%;
     height: 50px;
-    padding: 20px;
+    padding: 15px;
     margin: 20px auto;
     background-color: rgba(255, 255, 255, 0.85);
 }
 
 .about-navbar {
-    background-color: purple;
+    background-color: #4B0082;
     padding: 10px;
     text-align: center;
     margin: 20px 0;
@@ -127,7 +127,7 @@ img {
 
 /* background for about page */
 .about-page {
-    background-image: url("backgroundabout.jpg");
+    background-image: url("../backgroundabout.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
