@@ -4,6 +4,7 @@ body {
     font-size: 16px;
     text-align: left;
     margin: 20px;
+    min-height: 100vh;
 }
 
 /* INDEX PAGE */
@@ -45,8 +46,14 @@ body {
     color: yellow;
     text-decoration: underline;
     font-weight: bold;
+    transition: color 0.5s ease;
 }
 
+.navbar a:hover {
+    color: white;
+}
+
+/*
 .main-table {
     width: 100%;
     border: 2px solid black;
@@ -56,6 +63,7 @@ body {
 .main-table td {
     padding: 15px;
 }
+*/
 
 h2 {
     color: purple;
@@ -76,11 +84,27 @@ img {
     background-position: center;
 }
 
+/* FLEXBOX LAYOUT*/
+.main-container { 
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.main-content {
+    flex: 7;
+    padding: 15px;
+}
+
 .popular {
+    flex: 3;
     border-left: 2px solid purple;
     padding: 15px;
     background-color: rgba(230, 220, 255, 0.9);
 }
+
 
 /* ABOUT PAGE */
 
@@ -116,12 +140,21 @@ img {
     color: yellow;
     text-decoration: underline;
     font-weight: bold;
+    transition: color 0.5s ease;
+}
+
+.about-navbar a:hover {
+    color: white;
 }
 
 .thank-you {
     text-align: center;
     font-size: 18px;
-    margin: 30px;
+    margin: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid darkblue;
+    color: darkblue;
 }
 
 
@@ -131,4 +164,148 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+
+/* DESKTOP - screens wider than 1024px */
+@media screen and (min-width: 1025px) {
+
+    .main-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-content {
+        flex: 7;
+    }
+
+    .popular {
+        flex: 3;
+    }
+}
+
+
+/* TABLET - screens between 600px and 1024px */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    body {
+        margin: 10px;
+    }
+
+    .home-title {
+        width: 70%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .main-content {
+        flex: 2;
+        min-width: 0;
+    }
+
+    .popular {
+        flex: 1;
+        min-width: 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-title {
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+    }
+
+    .about-table {
+    width: 100%;
+    }
+
+    .about-table td {
+    padding: 15px;
+    }
+}
+
+
+/* MOBILE - screens narrower than 600px */
+@media screen and (max-width: 599px) {
+
+    body {
+        margin: 5px;
+    }
+
+    .home-title {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        font-size: 28px;
+    }
+
+    .navbar {
+        line-height: 2;
+        padding: 8px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .main-content {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .popular {
+        width: 100%;
+        box-sizing: border-box;
+        border-left: none;
+        border-top: 2px solid purple;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-title {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 24px;
+    padding: 10px;
+    margin: 10px 0;
+    }
+
+    .about-table {
+        width: 100%;
+    }
+
+    .about-table td {
+        padding: 10px;
+    }
+
+    .about-navbar {
+        margin: 10px 0;
+        line-height: 2;
+    }
+
+    .about-navbar a {
+        font-size: 14px;
+    }
+
+    .thank-you {
+        text-align: center;
+        font-size: 18px;
+        margin: 20px 0;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.85);
+        border: 2px solid darkblue;
+        color: darkblue;
+    }
 }
